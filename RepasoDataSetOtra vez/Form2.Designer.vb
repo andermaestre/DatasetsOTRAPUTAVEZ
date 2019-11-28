@@ -33,7 +33,7 @@ Partial Class Form2
         Me.txtTotalLinea = New System.Windows.Forms.TextBox()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
-        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.lvDetalles = New System.Windows.Forms.ListView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -43,6 +43,11 @@ Partial Class Form2
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.lbl = New System.Windows.Forms.Label()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
         'txtIdPedido
@@ -54,28 +59,28 @@ Partial Class Form2
         '
         'txtFecha
         '
-        Me.txtFecha.Location = New System.Drawing.Point(538, 47)
+        Me.txtFecha.Location = New System.Drawing.Point(153, 48)
         Me.txtFecha.Name = "txtFecha"
         Me.txtFecha.Size = New System.Drawing.Size(100, 20)
         Me.txtFecha.TabIndex = 1
         '
         'txtPrecio
         '
-        Me.txtPrecio.Location = New System.Drawing.Point(189, 301)
+        Me.txtPrecio.Location = New System.Drawing.Point(411, 131)
         Me.txtPrecio.Name = "txtPrecio"
         Me.txtPrecio.Size = New System.Drawing.Size(100, 20)
         Me.txtPrecio.TabIndex = 2
         '
         'txtUnidades
         '
-        Me.txtUnidades.Location = New System.Drawing.Point(305, 301)
+        Me.txtUnidades.Location = New System.Drawing.Point(411, 172)
         Me.txtUnidades.Name = "txtUnidades"
         Me.txtUnidades.Size = New System.Drawing.Size(100, 20)
         Me.txtUnidades.TabIndex = 3
         '
         'txtTotalDet
         '
-        Me.txtTotalDet.Location = New System.Drawing.Point(411, 300)
+        Me.txtTotalDet.Location = New System.Drawing.Point(411, 216)
         Me.txtTotalDet.Name = "txtTotalDet"
         Me.txtTotalDet.Size = New System.Drawing.Size(100, 20)
         Me.txtTotalDet.TabIndex = 4
@@ -83,35 +88,35 @@ Partial Class Form2
         'cbProductos
         '
         Me.cbProductos.FormattingEnabled = True
-        Me.cbProductos.Location = New System.Drawing.Point(12, 299)
+        Me.cbProductos.Location = New System.Drawing.Point(411, 89)
         Me.cbProductos.Name = "cbProductos"
         Me.cbProductos.Size = New System.Drawing.Size(121, 21)
         Me.cbProductos.TabIndex = 5
         '
         'txtPrecioTotal
         '
-        Me.txtPrecioTotal.Location = New System.Drawing.Point(15, 394)
+        Me.txtPrecioTotal.Location = New System.Drawing.Point(25, 310)
         Me.txtPrecioTotal.Name = "txtPrecioTotal"
         Me.txtPrecioTotal.Size = New System.Drawing.Size(100, 20)
         Me.txtPrecioTotal.TabIndex = 6
         '
         'txtTotalIva
         '
-        Me.txtTotalIva.Location = New System.Drawing.Point(141, 394)
+        Me.txtTotalIva.Location = New System.Drawing.Point(151, 310)
         Me.txtTotalIva.Name = "txtTotalIva"
         Me.txtTotalIva.Size = New System.Drawing.Size(100, 20)
         Me.txtTotalIva.TabIndex = 7
         '
         'txtTotalLinea
         '
-        Me.txtTotalLinea.Location = New System.Drawing.Point(266, 394)
+        Me.txtTotalLinea.Location = New System.Drawing.Point(276, 310)
         Me.txtTotalLinea.Name = "txtTotalLinea"
         Me.txtTotalLinea.Size = New System.Drawing.Size(100, 20)
         Me.txtTotalLinea.TabIndex = 8
         '
         'btnAgregar
         '
-        Me.btnAgregar.Location = New System.Drawing.Point(538, 297)
+        Me.btnAgregar.Location = New System.Drawing.Point(436, 251)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(75, 23)
         Me.btnAgregar.TabIndex = 9
@@ -120,21 +125,23 @@ Partial Class Form2
         '
         'btnCerrar
         '
-        Me.btnCerrar.Location = New System.Drawing.Point(470, 391)
+        Me.btnCerrar.Location = New System.Drawing.Point(436, 378)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(75, 23)
         Me.btnCerrar.TabIndex = 10
         Me.btnCerrar.Text = "Cerrar"
         Me.btnCerrar.UseVisualStyleBackColor = True
         '
-        'ListView1
+        'lvDetalles
         '
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(12, 89)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(702, 185)
-        Me.ListView1.TabIndex = 11
-        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.lvDetalles.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5})
+        Me.lvDetalles.HideSelection = False
+        Me.lvDetalles.Location = New System.Drawing.Point(12, 89)
+        Me.lvDetalles.Name = "lvDetalles"
+        Me.lvDetalles.Size = New System.Drawing.Size(393, 185)
+        Me.lvDetalles.TabIndex = 11
+        Me.lvDetalles.UseCompatibleStateImageBehavior = False
+        Me.lvDetalles.View = System.Windows.Forms.View.Details
         '
         'Label1
         '
@@ -148,7 +155,7 @@ Partial Class Form2
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(539, 27)
+        Me.Label2.Location = New System.Drawing.Point(154, 28)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(37, 13)
         Me.Label2.TabIndex = 13
@@ -157,7 +164,7 @@ Partial Class Form2
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 283)
+        Me.Label3.Location = New System.Drawing.Point(408, 73)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(50, 13)
         Me.Label3.TabIndex = 14
@@ -166,7 +173,7 @@ Partial Class Form2
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(186, 285)
+        Me.Label4.Location = New System.Drawing.Point(408, 115)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(37, 13)
         Me.Label4.TabIndex = 15
@@ -175,7 +182,7 @@ Partial Class Form2
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(302, 285)
+        Me.Label5.Location = New System.Drawing.Point(408, 156)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(52, 13)
         Me.Label5.TabIndex = 16
@@ -184,7 +191,7 @@ Partial Class Form2
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(408, 284)
+        Me.Label6.Location = New System.Drawing.Point(408, 200)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(60, 13)
         Me.Label6.TabIndex = 17
@@ -193,7 +200,7 @@ Partial Class Form2
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(12, 378)
+        Me.Label7.Location = New System.Drawing.Point(22, 294)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(37, 13)
         Me.Label7.TabIndex = 18
@@ -202,7 +209,7 @@ Partial Class Form2
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(138, 380)
+        Me.Label8.Location = New System.Drawing.Point(148, 294)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(22, 13)
         Me.Label8.TabIndex = 19
@@ -211,17 +218,41 @@ Partial Class Form2
         'lbl
         '
         Me.lbl.AutoSize = True
-        Me.lbl.Location = New System.Drawing.Point(263, 378)
+        Me.lbl.Location = New System.Drawing.Point(273, 294)
         Me.lbl.Name = "lbl"
         Me.lbl.Size = New System.Drawing.Size(60, 13)
         Me.lbl.TabIndex = 20
         Me.lbl.Text = "Total Linea"
         '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "IdDetalle"
+        Me.ColumnHeader1.Width = 67
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "IdPedido"
+        Me.ColumnHeader2.Width = 68
+        '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.Text = "IdProducto"
+        Me.ColumnHeader3.Width = 75
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "Unidades"
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "TotalLinea"
+        Me.ColumnHeader5.Width = 99
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(726, 470)
+        Me.ClientSize = New System.Drawing.Size(538, 434)
         Me.Controls.Add(Me.lbl)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -231,7 +262,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.lvDetalles)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.txtTotalLinea)
@@ -261,7 +292,7 @@ Partial Class Form2
     Friend WithEvents txtTotalLinea As TextBox
     Friend WithEvents btnAgregar As Button
     Friend WithEvents btnCerrar As Button
-    Friend WithEvents ListView1 As ListView
+    Friend WithEvents lvDetalles As ListView
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
@@ -271,4 +302,9 @@ Partial Class Form2
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents lbl As Label
+    Friend WithEvents ColumnHeader1 As ColumnHeader
+    Friend WithEvents ColumnHeader2 As ColumnHeader
+    Friend WithEvents ColumnHeader3 As ColumnHeader
+    Friend WithEvents ColumnHeader4 As ColumnHeader
+    Friend WithEvents ColumnHeader5 As ColumnHeader
 End Class

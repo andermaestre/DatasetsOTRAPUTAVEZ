@@ -24,7 +24,7 @@
         t.PrimaryKey = key
 
         t = ds.Tables("Productos")
-        key(0) = t.Columns("IdProductos")
+        key(0) = t.Columns("IdProducto")
         t.PrimaryKey = key
 
         t = ds.Tables("LineasDetalle")

@@ -11,3 +11,16 @@ C:\Users\andermaestre\source\repos\RepasoDataSetOtra vez\RepasoDataSetOtra vez\o
 C:\Users\andermaestre\source\repos\RepasoDataSetOtra vez\RepasoDataSetOtra vez\obj\Debug\RepasoDataSetOtra vez.exe
 C:\Users\andermaestre\source\repos\RepasoDataSetOtra vez\RepasoDataSetOtra vez\obj\Debug\RepasoDataSetOtra vez.xml
 C:\Users\andermaestre\source\repos\RepasoDataSetOtra vez\RepasoDataSetOtra vez\obj\Debug\RepasoDataSetOtra vez.pdb
+C:\Users\andermaestre\Desktop\git\DatasetsOTRAPUTAVEZ\RepasoDataSetOtra vez\bin\Debug\RepasoDataSetOtra vez.exe.config
+C:\Users\andermaestre\Desktop\git\DatasetsOTRAPUTAVEZ\RepasoDataSetOtra vez\bin\Debug\RepasoDataSetOtra vez.exe
+C:\Users\andermaestre\Desktop\git\DatasetsOTRAPUTAVEZ\RepasoDataSetOtra vez\bin\Debug\RepasoDataSetOtra vez.pdb
+C:\Users\andermaestre\Desktop\git\DatasetsOTRAPUTAVEZ\RepasoDataSetOtra vez\bin\Debug\RepasoDataSetOtra vez.xml
+C:\Users\andermaestre\Desktop\git\DatasetsOTRAPUTAVEZ\RepasoDataSetOtra vez\obj\Debug\RepasoDataSetOtra vez.vbprojAssemblyReference.cache
+C:\Users\andermaestre\Desktop\git\DatasetsOTRAPUTAVEZ\RepasoDataSetOtra vez\obj\Debug\RepasoDataSetOtra_vez.Form1.resources
+C:\Users\andermaestre\Desktop\git\DatasetsOTRAPUTAVEZ\RepasoDataSetOtra vez\obj\Debug\RepasoDataSetOtra_vez.Form2.resources
+C:\Users\andermaestre\Desktop\git\DatasetsOTRAPUTAVEZ\RepasoDataSetOtra vez\obj\Debug\RepasoDataSetOtra_vez.Resources.resources
+C:\Users\andermaestre\Desktop\git\DatasetsOTRAPUTAVEZ\RepasoDataSetOtra vez\obj\Debug\RepasoDataSetOtra vez.vbproj.GenerateResource.cache
+C:\Users\andermaestre\Desktop\git\DatasetsOTRAPUTAVEZ\RepasoDataSetOtra vez\obj\Debug\RepasoDataSetOtra vez.vbproj.CoreCompileInputs.cache
+C:\Users\andermaestre\Desktop\git\DatasetsOTRAPUTAVEZ\RepasoDataSetOtra vez\obj\Debug\RepasoDataSetOtra vez.exe
+C:\Users\andermaestre\Desktop\git\DatasetsOTRAPUTAVEZ\RepasoDataSetOtra vez\obj\Debug\RepasoDataSetOtra vez.xml
+C:\Users\andermaestre\Desktop\git\DatasetsOTRAPUTAVEZ\RepasoDataSetOtra vez\obj\Debug\RepasoDataSetOtra vez.pdb
